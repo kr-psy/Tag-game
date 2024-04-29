@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  const element1 = $('#box'); // Replace 'box' with the actual ID of your first element
+  const element1 = $('#box');
   const rect1 = element1.get(0).getBoundingClientRect();
   const x1 = rect1.left;
   const y1 = rect1.top;
@@ -23,7 +23,7 @@ $(document).ready(function() {
       timeOver();
     }
   }, 1000);
-  const element2 = $('#box2'); // Replace 'box2' with the actual ID of your second element
+  const element2 = $('#box2');
   const rect2 = element2.get(0).getBoundingClientRect();
   const x2 = rect2.left;
   const y2 = rect2.top;
@@ -64,49 +64,49 @@ $(document).ready(function() {
         if (!intervalA) {
           intervalA = setInterval(function() {
             moveBox('a');
-          }, 0.001); // Adjust interval timing as needed
+          }, 0.001);
         }
         break;
       case "s":
         if (!intervalS) {
           intervalS = setInterval(function() {
             moveBox('s');
-          }, 0.001); // Adjust interval timing as needed
+          }, 0.001);
         }
         break;
       case "d":
         if (!intervalD) {
           intervalD = setInterval(function() {
             moveBox('d');
-          }, 0.001); // Adjust interval timing as needed
+          }, 0.001);
         }
         break;
       case "ArrowUp":
         if (!intervalUp) {
           intervalUp = setInterval(function() {
             moveBox('ArrowUp');
-          }, 0.001); // Adjust interval timing as needed
+          }, 0.001);
         }
         break;
       case "ArrowDown":
         if (!intervalDown) {
           intervalDown = setInterval(function() {
             moveBox('ArrowDown');
-          }, 0.001); // Adjust interval timing as needed
+          }, 0.001);
         }
         break;
       case "ArrowLeft":
         if (!intervalLeft) {
           intervalLeft = setInterval(function() {
             moveBox('ArrowLeft');
-          }, 0.001); // Adjust interval timing as needed
+          }, 0.001);
         }
         break;
       case "ArrowRight":
         if (!intervalRight) {
           intervalRight = setInterval(function() {
             moveBox('ArrowRight');
-          }, 0.001); // Adjust interval timing as needed
+          }, 0.001);
         }
         break;
     }
@@ -156,7 +156,7 @@ $(document).ready(function() {
     let topValue2 = parseFloat($('#box').css("top"));
     const box = $('#box');
     const box2 = $('#box2');
-    const step = 2; // Adjust the step value as needed for smoother movement
+    const step = 2;
 
     if (areTouching(element1, element2) && touching === 0) {
       touching = 1
